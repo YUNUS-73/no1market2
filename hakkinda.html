@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda - NO1-Market</title>
+    <!-- Favicon eklendi -->
+    <link rel="icon" href="logo.png" type="image/png">
+
+    <!-- 
+        Maksimum Güvenlik İyileştirmesi: Content Security Policy (CSP)
+        Bu meta etiketi, sitenizin hangi kaynaklardan içerik (JS, CSS, görseller, fontlar)
+        yükleyebileceğini en katı şekilde belirler. Bu, Cross-Site Scripting (XSS) saldırılarını
+        önlemeye yardımcı olur. Sadece güvenli ve tanımlanmış kaynaklardan yüklemeye
+        izin verir.
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://cdn.tailwindcss.com https://fonts.googleapis.com https://*.gstatic.com; style-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://placehold.co; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; connect-src 'self' https://api.whatsapp.com https://t.me; object-src 'none';">
+
+    <!-- Tailwind CSS ve Montserrat, Cinzel fontlarını dahil ediyoruz. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #1a202c; /* Koyu gri arka plan */
+            color: #ffffff; /* Varsayılan metin rengi */
+            min-height: 100vh;
+        }
+        .link-hover-effect {
+            transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+        }
+        .link-hover-effect:hover {
+            transform: scale(1.05);
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+        .font-trajan-pro {
+            font-family: 'Cinzel', serif;
+        }
+    </style>
+</head>
+<body class="flex flex-col justify-between items-center p-4">
+
+    <!-- Üst kısım: NO1-Market başlığı, logo ve Kategoriler -->
+    <header class="w-full flex flex-col items-center p-2">
+        <div class="w-full flex justify-between items-center mb-6 px-4">
+            <!-- Sol üstteki logo ve başlık - responsive boyutlandırma eklendi -->
+            <div class="flex items-center">
+                <img src="logo.png" onerror="this.onerror=null;this.src='https://placehold.co/48x48/2d3748/ffffff?text=NO1';" alt="NO1-Market Logo" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full mr-2">
+                <div class="text-xl sm:text-3xl font-bold text-yellow-400 text-shadow">NO1-Market</div>
+            </div>
+            <!-- Geri dönmek için ana sayfa linki -->
+            <a href="index.html" class="link-hover-effect text-yellow-200 hover:text-yellow-400 text-shadow underline text-lg sm:text-xl">
+                Ana Sayfa
+            </a>
+        </div>
+    </header>
+
+    <!-- Ana içerik kısmı: Hakkımızda metni -->
+    <main class="flex-grow flex flex-col items-center justify-center p-4 w-full max-w-4xl">
+        <div class="bg-gray-800 p-8 rounded-lg shadow-xl text-center mb-8 w-full">
+            <h1 class="font-trajan-pro text-3xl sm:text-6xl font-bold text-red-500 text-shadow mb-8">
+                Hakkımızda
+            </h1>
+            <p class="text-gray-300 text-lg sm:text-xl leading-relaxed mb-6">
+                <strong>NO1-Market</strong> olarak, dijital ürün ve hizmetler dünyasında güvenli ve kolay ticaretin adresi olmayı hedefliyoruz. Alışverişin her adımında şeffaflığı ve müşteri memnuniyetini ön planda tutarak, sizlere benzersiz bir deneyim sunuyoruz.
+            </p>
+            <p class="text-gray-300 text-lg sm:text-xl leading-relaxed mb-6">
+                Platformumuzda <strong>Film Keyfi</strong>, <strong>Takas</strong>, <strong>SMS Onayı</strong> gibi birçok farklı kategoride hizmet bulabilirsiniz. Ayrıca, <strong>Razer Gold</strong> ve <strong>Bize Sat</strong> gibi özel hizmetlerimizle de ihtiyaçlarınıza yönelik çözümler sunuyoruz.
+            </p>
+            <p class="text-gray-300 text-lg sm:text-xl leading-relaxed mb-6">
+                <strong>Ödeme Seçenekleri:</strong> Müşterilerimize esneklik sağlamak amacıyla, geleneksel ödeme yöntemlerinin yanı sıra <strong>kripto para birimleriyle de ödeme kabul ediyoruz</strong>. Güvenli ve hızlı işlemler için bizimle iletişime geçin.
+            </p>
+            <p class="text-gray-300 text-lg sm:text-xl leading-relaxed mb-6">
+                <strong>İletişim ve Destek:</strong> Herhangi bir sorunuz, öneriniz veya yardıma ihtiyacınız olduğunda <strong>7/24 destek</strong> sağlamak için buradayız. Aşağıdaki iletişim kanallarımızdan bize dilediğiniz zaman ulaşabilirsiniz.
+            </p>
+            <div class="mt-8 flex flex-col items-center space-y-4">
+                <!-- 'rel="noopener noreferrer"' eklendi -->
+                <a href="https://wa.me/5397248410" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-green-600 text-white font-bold py-3 px-6 rounded-full button-hover-effect hover:bg-green-700">
+                    WhatsApp Destek Hattı
+                </a>
+                <p class="text-gray-400 font-bold text-xl">Telefon: 539 724 84 10</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Alt kısım: Telegram ve WhatsApp logoları -->
+    <footer class="flex justify-center space-x-6 p-4 mt-8">
+        <!-- 'rel="noopener noreferrer"' eklendi -->
+        <a href="https://t.me/mehmetkahraman019" target="_blank" rel="noopener noreferrer" class="link-hover-effect">
+            <img src="2.jpg" onerror="this.onerror=null;this.src='https://placehold.co/48x48/2d3748/ffffff?text=TG';" alt="Telegram Logosu" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full shadow-lg border-2 border-white">
+        </a>
+        <!-- 'rel="noopener noreferrer"' eklendi -->
+        <a href="https://wa.me/5397248410" target="_blank" rel="noopener noreferrer" class="link-hover-effect">
+            <img src="3.jpg" onerror="this.onerror=null;this.src='https://placehold.co/48x48/2d3748/ffffff?text=WA';" alt="WhatsApp Logosu" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full shadow-lg border-2 border-white">
+        </a>
+    </footer>
+
+</body>
+</html>

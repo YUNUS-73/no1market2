@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bize Sat - NO1-Market</title>
+    <!-- Favicon eklendi -->
+    <link rel="icon" href="logo.png" type="image/png">
+
+    <!-- 
+        Güvenlik İyileştirmesi: Content Security Policy (CSP)
+        Bu meta etiketi, tarayıcıya hangi kaynaklardan içerik (betikler, stiller, görseller)
+        yüklenebileceğini bildirerek XSS (Cross-Site Scripting) gibi saldırıları önler.
+        'self' ifadesi, sadece aynı kaynaktan gelen içeriğe izin verirken,
+        diğer URL'ler harici kaynakları belirtir.
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://cdn.tailwindcss.com https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://placehold.co; script-src 'self' https://cdn.tailwindcss.com; connect-src 'self';">
+
+    <!-- Tailwind CSS ve Montserrat fontlarını dahil ediyoruz. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #1a202c; /* Koyu gri arka plan */
+            color: #ffffff; /* Varsayılan metin rengi */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        /* Sabit genişlikte ana konteyner */
+        .container {
+            width: 1024px; /* Sabit genişlik */
+            margin: 0 auto; /* Ortalamak için */
+        }
+        @media (max-width: 1024px) {
+            .container {
+                width: 100%;
+                padding: 0 1rem; /* Küçük ekranlarda kenar boşluğu */
+            }
+        }
+        .product-card {
+            background-color: #2d3748;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s ease-in-out;
+        }
+        .product-card:hover {
+            transform: scale(1.03);
+        }
+        .product-image {
+            width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+        }
+        .link-hover-effect {
+            transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+        }
+        .link-hover-effect:hover {
+            transform: scale(1.05);
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+    </style>
+</head>
+<body class="p-4">
+
+    <!-- Üst kısım: NO1-Market başlığı, logo ve Ana Sayfa linki -->
+    <header class="container flex justify-between items-center p-2 px-4">
+        <div class="flex items-center">
+            <img src="logo.png" onerror="this.onerror=null; this.src='https://placehold.co/48x48/2d3748/ffffff?text=NO1';" alt="NO1-Market Logo" class="h-12 w-12 rounded-full mr-2">
+            <div class="text-3xl font-bold text-yellow-400 text-shadow">NO1-Market</div>
+        </div>
+        <!-- 'rel' özelliği eklendi -->
+        <a href="index.html" class="link-hover-effect text-yellow-200 hover:text-yellow-400 text-shadow text-base">Anasayfa</a>
+    </header>
+
+    <main class="container bg-gray-800 p-8 rounded-lg shadow-xl mt-4">
+        <h1 class="text-5xl font-extrabold text-center mb-8 text-yellow-300">Bize Sat</h1>
+        
+        <!-- Ürün kartlarının yer aldığı bölüm -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Migros Yemek Ürünü -->
+            <a href="migros.html" class="product-card block">
+                <img src="migros.png" onerror="this.onerror=null; this.src='https://placehold.co/400x250/2d3748/ffffff?text=Migros+Yemek';" alt="Migros Yemek Görseli" class="product-image mb-4">
+                <div class="flex flex-col items-center">
+                    <h2 class="text-xl font-bold mb-2 text-green-400">Migros Yemek</h2>
+                    <span class="text-2xl font-extrabold text-red-500">150-300 TL</span>
+                </div>
+            </a>
+            
+            <!-- KazandıRio ve Daha Daha Ürünü -->
+            <a href="cips-kapak.html" class="product-card block">
+                <img src="cips-kapak.png" onerror="this.onerror=null; this.src='https://placehold.co/400x250/2d3748/ffffff?text=KazandıRio+Daha+Daha';" alt="KazandıRio ve Daha Daha Görseli" class="product-image mb-4">
+                <div class="flex flex-col items-center">
+                    <h2 class="text-xl font-bold mb-2 text-white">KazandıRio ve Daha Daha</h2>
+                    <span class="text-2xl font-extrabold text-red-500">1,5-7 TL</span>
+                </div>
+            </a>
+            
+            <!-- McDonald's Bedava Menüler Ürünü -->
+            <a href="bedava-menu.html" class="product-card block">
+                <img src="bedava-menu.png" onerror="this.onerror=null; this.src='https://placehold.co/400x250/2d3748/ffffff?text=McDonalds+Menüler';" alt="McDonald's Bedava Menü Görseli" class="product-image mb-4">
+                <div class="flex flex-col items-center">
+                    <h2 class="text-xl font-bold mb-2 text-yellow-400">Fastfood Mağazalarınızda ki Bedava Menüler</h2>
+                    <span class="text-2xl font-extrabold text-red-500">-</span>
+                </div>
+            </a>
+            
+            <!-- Market Çekleri Ürünü -->
+            <a href="market-cek.html" class="product-card block">
+                <img src="market-cek.png" onerror="this.onerror=null; this.src='https://placehold.co/400x250/2d3748/ffffff?text=Market+Çekleri';" alt="Market Çekleri Görseli" class="product-image mb-4">
+                <div class="flex flex-col items-center">
+                    <h2 class="text-xl font-bold mb-2 text-blue-400">Market Çekleri</h2>
+                    <span class="text-2xl font-extrabold text-red-500">-</span>
+                </div>
+            </a>
+            
+            <!-- Espressolab Market Fişi Ürünü -->
+            <a href="market-fis.html" class="product-card block">
+                <img src="Espressolab.png" onerror="this.onerror=null; this.src='https://placehold.co/400x250/2d3748/ffffff?text=Espressolab+Fişi';" alt="Espressolab Market Fişi Görseli" class="product-image mb-4">
+                <div class="flex flex-col items-center">
+                    <h2 class="text-xl font-bold mb-2 text-orange-400">Espressolab Ücretsiz Hediye Kahve Kodu</h2>
+                    <span class="text-2xl font-extrabold text-red-500">20TL Toplu 30TL</span>
+                </div>
+            </a>
+            
+            <!-- Yeni eklenen Market Fişi Ürünü -->
+            <a href="yeni-market-fis.html" class="product-card block">
+                <img src="marketfis.png" onerror="this.onerror=null; this.src='https://placehold.co/400x250/2d3748/ffffff?text=Market+Fişi';" alt="Market Fişi Görseli" class="product-image mb-4">
+                <div class="flex flex-col items-center">
+                    <h2 class="text-xl font-bold mb-2 text-orange-400">Market Fişi</h2>
+                    <span class="text-2xl font-extrabold text-red-500">-</span>
+                </div>
+            </a>
+
+            <!-- Play Store Hediye Kodu Ürünü -->
+            <a href="googleplay.html" class="product-card block">
+                <img src="googleplay.png" onerror="this.onerror=null; this.src='https://placehold.co/400x250/2d3748/ffffff?text=Play+Store+Hediye';" alt="Play Store Hediye Kodu Görseli" class="product-image mb-4">
+                <div class="flex flex-col items-center">
+                    <h2 class="text-xl font-bold mb-2 text-indigo-400">Play Store Hediye Kodu</h2>
+                    <span class="text-2xl font-extrabold text-red-500">%55 - Toplu %65 oranla</span>
+                </div>
+            </a>
+            
+            <!-- S Sport Plus Ürünü -->
+            <a href="ssport.html" class="product-card block">
+                <img src="ssport.png" onerror="this.onerror=null; this.src='https://placehold.co/400x250/2d3748/ffffff?text=S+Sport+Plus';" alt="S Sport Plus Görseli" class="product-image mb-4">
+                <div class="flex flex-col items-center">
+                    <h2 class="text-xl font-bold mb-2 text-red-500">S Sport Plus</h2>
+                    <span class="text-2xl font-extrabold text-red-500">40 TL 10 ve Üzeri 45TL</span>
+                </div>
+            </a>
+            
+            <!-- Hopi Paracık Ürünü -->
+            <a href="hopi.html" class="product-card block">
+                <img src="Hobi.png" onerror="this.onerror=null; this.src='https://placehold.co/400x250/2d3748/ffffff?text=Hopi+Paracık';" alt="Hopi Paracık Görseli" class="product-image mb-4">
+                <div class="flex flex-col items-center">
+                    <h2 class="text-xl font-bold mb-2 text-pink-400">Hopi Paracık</h2>
+                    <span class="text-2xl font-extrabold text-red-500">%60-500 ve üstü %70</span>
+                </div>
+            </a>
+
+            <!-- Coffy Kodu Ürünü -->
+            <a href="coofy.html" class="product-card block">
+                <img src="coofy.png" onerror="this.onerror=null; this.src='https://placehold.co/400x250/2d3748/ffffff?text=Coffy+Kodu';" alt="Coffy Kodu Görseli" class="product-image mb-4">
+                <div class="flex flex-col items-center">
+                    <h2 class="text-xl font-bold mb-2 text-white">Coffy Kodu</h2>
+                    <span class="text-2xl font-extrabold text-red-500">15 TL</span>
+                </div>
+            </a>
+
+            <!-- YENİ EKlenen: Nescafe Kodu Ürünü -->
+            <a href="nescafe.html" class="product-card block">
+                <img src="nescafe.png" onerror="this.onerror=null; this.src='https://placehold.co/400x250/2d3748/ffffff?text=Nescafe+Kodu';" alt="Nescafe Kodu Görseli" class="product-image mb-4">
+                <div class="flex flex-col items-center">
+                    <h2 class="text-xl font-bold mb-2 text-red-400">Nescafe Kodu</h2>
+                    <span class="text-2xl font-extrabold text-red-500">10'lu Ekonomik Paket 15 TL
+                        20'li Dev Ekonomik Paket 25TL</span>
+                </div>
+            </a>
+
+            <!-- YENİ EKlenen: Pluxee Yemek Bakiyesi Ürünü -->
+            <a href="pluxee.html" class="product-card block">
+                <img src="pluxee.png" onerror="this.onerror=null; this.src='https://placehold.co/400x250/2d3748/ffffff?text=Pluxee+Yemek';" alt="Pluxee Yemek Bakiyesi Görseli" class="product-image mb-4">
+                <div class="flex flex-col items-center">
+                    <h2 class="text-xl font-bold mb-2 text-green-400">Pluxee Yemek Bakiyesi</h2>
+                    <span class="text-2xl font-extrabold text-red-500">%50 500 üzeri %60</span>
+                </div>
+            </a>
+            
+            <!-- YENİ EKlenen: Param Bakiye Kodları Ürünü -->
+            <a href="param.html" class="product-card block">
+                <img src="param.jpg" onerror="this.onerror=null; this.src='https://placehold.co/400x250/2d3748/ffffff?text=Param+Bakiye';" alt="Param Bakiye Kodları Görseli" class="product-image mb-4">
+                <div class="flex flex-col items-center">
+                    <h2 class="text-xl font-bold mb-2 text-red-400">Param Bakiye Kodları</h2>
+                    <span class="text-2xl font-extrabold text-red-500">%65</span>
+                </div>
+            </a>
+
+            <!-- YENİ EKLENEN: Gmail Ürünü -->
+            <a href="gmail.html" class="product-card block">
+                <img src="gmail.png" onerror="this.onerror=null; this.src='https://placehold.co/400x250/2d3748/ffffff?text=Gmail';" alt="Gmail Görseli" class="product-image mb-4">
+                <div class="flex flex-col items-center">
+                    <h2 class="text-xl font-bold mb-2 text-red-500">Gmail</h2>
+                    <span class="text-2xl font-extrabold text-red-500">10 TL</span>
+                </div>
+            </a>
+
+        </div>
+    </main>
+
+    <!-- Alt kısım: Telegram ve WhatsApp logoları -->
+    <footer class="container flex justify-center space-x-6 p-4 mt-8">
+        <!-- 'rel' özelliği eklendi -->
+        <a href="https://t.me/mehmetkahraman019" target="_blank" rel="noopener noreferrer" class="link-hover-effect">
+            <img src="2.jpg" onerror="this.onerror=null; this.src='https://placehold.co/48x48/2d3748/ffffff?text=TG';" alt="Telegram Logosu" class="h-12 w-12 rounded-full shadow-lg border-2 border-white">
+        </a>
+        <!-- 'rel' özelliği eklendi -->
+        <a href="https://wa.me/5397248410" target="_blank" rel="noopener noreferrer" class="link-hover-effect">
+            <img src="3.jpg" onerror="this.onerror=null; this.src='https://placehold.co/48x48/2d3748/ffffff?text=WA';" alt="WhatsApp Logosu" class="h-12 w-12 rounded-full shadow-lg border-2 border-white">
+        </a>
+    </footer>
+
+</body>
+</html>

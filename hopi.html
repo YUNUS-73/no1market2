@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hopi Paracık - Satın Al</title>
+    <!-- Favicon is added -->
+    <link rel="icon" href="logo.png" type="image/png">
+    <!-- Including Tailwind CSS and Montserrat fonts. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #1a202c; /* Dark gray background */
+            color: #ffffff; /* Default text color */
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+        .link-hover-effect {
+            transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+        }
+        .link-hover-effect:hover {
+            transform: scale(1.05);
+        }
+        .button-hover-effect {
+            transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+        }
+        .button-hover-effect:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center min-h-screen p-4">
+
+    <!-- Header section: NO1-Market title, logo and Home page link -->
+    <header class="w-full max-w-5xl flex justify-between items-center p-2 px-4">
+        <div class="flex items-center">
+            <img src="logo.png" onerror="this.onerror=null; this.src='https://placehold.co/48x48/2d3748/ffffff?text=NO1';" alt="NO1-Market Logo" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full mr-2">
+            <div class="text-xl sm:text-3xl font-bold text-yellow-400 text-shadow">NO1-Market</div>
+        </div>
+        <a href="index.html" class="link-hover-effect text-yellow-200 hover:text-yellow-400 text-shadow text-sm sm:text-base">Anasayfa</a>
+    </header>
+
+    <main class="w-full max-w-5xl bg-gray-800 p-8 rounded-lg shadow-xl flex-grow flex flex-col justify-center items-center mt-4">
+        <h1 class="text-3xl sm:text-5xl font-extrabold mb-8 text-shadow text-center">Hopi Paracık</h1>
+        
+        <!-- Product details section. It's a responsive grid layout. -->
+        <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <!-- Product image container -->
+            <div class="flex justify-center p-4">
+                <img src="Hobi.png" onerror="this.onerror=null; this.src='https://placehold.co/500x350/2d3748/ffffff?text=Hopi+Paracık';" alt="Hopi Paracık Görseli" class="w-full h-auto max-w-md rounded-lg shadow-xl">
+            </div>
+            
+            <!-- Product information and buttons -->
+            <div class="flex flex-col items-center text-center p-4">
+                <h2 class="text-2xl sm:text-4xl font-bold mb-4 text-pink-400">Hopi Paracık</h2>
+                <p class="text-lg text-gray-300 mb-6 max-w-prose">
+                    Hopi Paracıklarınızı bize satarak ek gelir elde edin. Değerlendirme ve fiyat teklifi için lütfen aşağıdaki iletişim kanallarından birini kullanarak bizimle iletişime geçin.
+                </p>
+                <p class="text-2xl sm:text-3xl font-extrabold mb-8 text-red-500">Fiyat: %60-500 ve üstü %70</p>
+                
+                <!-- Contact buttons -->
+                <div class="flex flex-col space-y-4 w-full max-w-xs">
+                    <a href="https://t.me/mehmetkahraman019" target="_blank" class="button-hover-effect bg-blue-500 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-blue-600 transition duration-300">
+                        Telegram ile İletişime Geç
+                    </a>
+                    <a href="https://wa.me/5397248410" target="_blank" class="button-hover-effect bg-green-500 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-green-600 transition duration-300">
+                        WhatsApp ile İletişime Geç
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer section: Telegram and WhatsApp logos -->
+    <footer class="w-full max-w-5xl flex justify-center space-x-6 p-4 mt-8">
+        <a href="https://t.me/mehmetkahraman019" target="_blank" class="link-hover-effect">
+            <img src="2.jpg" onerror="this.onerror=null; this.src='https://placehold.co/48x48/2d3748/ffffff?text=TG';" alt="Telegram Logosu" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full shadow-lg border-2 border-white">
+        </a>
+        <a href="https://wa.me/5397248410" target="_blank" class="link-hover-effect">
+            <img src="3.jpg" onerror="this.onerror=null; this.src='https://placehold.co/48x48/2d3748/ffffff?text=WA';" alt="WhatsApp Logosu" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full shadow-lg border-2 border-white">
+        </a>
+    </footer>
+
+</body>
+</html>

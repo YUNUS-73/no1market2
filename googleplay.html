@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Store Hediye Kodu - Bize Sat</title>
+    <!-- Favicon eklendi -->
+    <link rel="icon" href="logo.png" type="image/png">
+
+    <!--
+        Maksimum Güvenlik İyileştirmesi: Content Security Policy (CSP)
+        Bu meta etiketi, sitenizin hangi kaynaklardan içerik (JS, CSS, görseller, fontlar)
+        yükleyebileceğini en katı şekilde belirler. Bu, Cross-Site Scripting (XSS) saldırılarını
+        önlemeye yardımcı olur. Sadece güvenli ve tanımlanmış kaynaklardan yüklemeye
+        izin verir.
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://cdn.tailwindcss.com https://fonts.googleapis.com https://*.gstatic.com; style-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://placehold.co; script-src 'self' https://cdn.tailwindcss.com; connect-src 'self' https://api.whatsapp.com https://t.me; object-src 'none';">
+
+    <!-- Tailwind CSS ve Montserrat fontlarını dahil ediyoruz. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #1a202c; /* Koyu gri arka plan */
+            color: #ffffff; /* Varsayılan metin rengi */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        /* Sabit genişlikte ana konteyner */
+        .container {
+            width: 1024px; /* Sabit genişlik */
+            margin: 0 auto; /* Ortalamak için */
+        }
+        .product-card {
+            background-color: #2d3748;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s ease-in-out;
+        }
+        .product-card:hover {
+            transform: scale(1.03);
+        }
+        .link-hover-effect {
+            transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+        }
+        .link-hover-effect:hover {
+            transform: scale(1.05);
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+    </style>
+</head>
+<body class="p-4">
+
+    <!-- Üst kısım: NO1-Market başlığı, logo ve Ana Sayfa linki -->
+    <header class="container flex justify-between items-center p-2 px-4">
+        <div class="flex items-center">
+            <img src="logo.png" onerror="this.onerror=null; this.src='https://placehold.co/48x48/2d3748/ffffff?text=NO1';" alt="NO1-Market Logo" class="h-12 w-12 rounded-full mr-2">
+            <div class="text-3xl font-bold text-yellow-400 text-shadow">NO1-Market</div>
+        </div>
+        <a href="bizesat.html" class="link-hover-effect text-yellow-200 hover:text-yellow-400 text-shadow text-base">Geri Dön</a>
+    </header>
+
+    <main class="container bg-gray-800 p-8 rounded-lg shadow-xl mt-4">
+        <h1 class="text-5xl font-extrabold text-center mb-8 text-indigo-400">Play Store Hediye Kodu</h1>
+
+        <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+            <!-- Ürün Görseli -->
+            <div class="w-full md:w-1/2 flex justify-center">
+                <img src="googleplay.png" onerror="this.onerror=null; this.src='https://placehold.co/300x300/2d3748/ffffff?text=Google+Play';" alt="Play Store Hediye Kodu Görseli" class="rounded-lg shadow-xl" style="width: 300px;">
+            </div>
+
+            <!-- Ürün Bilgileri -->
+            <div class="w-full md:w-1/2">
+                <h2 class="text-3xl font-bold mb-4 text-white">Satış Bilgileri</h2>
+                <div class="text-lg mb-6">
+                    <p class="mb-2">Elindeki Play Store hediye kodlarını bize güvenle satabilirsin.</p>
+                    <p>Fiyatlandırma, kodun değerinin <span class="font-extrabold text-red-500">%55 ile toplu %65</span>'i arasında değişmektedir. Detaylar ve en iyi teklif için bizimle iletişime geçin.</p>
+                </div>
+                
+                <h3 class="text-2xl font-bold mb-4 text-white">Nasıl Satılır?</h3>
+                <ul class="list-disc list-inside space-y-2 mb-6 text-lg">
+                    <li>Aşağıdaki iletişim kanallarımızdan bize ulaş.</li>
+                    <li>Sahip olduğun Play Store hediye kodunu ve değerini bize bildir.</li>
+                    <li>Sana en uygun teklifi sunalım.</li>
+                    <li>Anlaştığımız takdirde ödemeyi hızlıca gerçekleştirelim.</li>
+                </ul>
+
+                <!-- İletişim Butonları -->
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <!-- 'rel="noopener noreferrer"' eklendi -->
+                    <a href="https://t.me/mehmetkahraman019" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg text-center transition-colors">
+                        Telegram'dan Ulaş
+                    </a>
+                    <!-- 'rel="noopener noreferrer"' eklendi -->
+                    <a href="https://wa.me/5397248410" target="_blank" rel="noopener noreferrer" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg text-center transition-colors">
+                        WhatsApp'tan Ulaş
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Alt kısım: Telegram ve WhatsApp logoları -->
+    <footer class="container flex justify-center space-x-6 p-4 mt-8">
+        <!-- 'rel="noopener noreferrer"' eklendi -->
+        <a href="https://t.me/mehmetkahraman019" target="_blank" rel="noopener noreferrer" class="link-hover-effect">
+            <img src="2.jpg" onerror="this.onerror=null; this.src='https://placehold.co/48x48/2d3748/ffffff?text=TG';" alt="Telegram Logosu" class="h-12 w-12 rounded-full shadow-lg border-2 border-white">
+        </a>
+        <!-- 'rel="noopener noreferrer"' eklendi -->
+        <a href="https://wa.me/5397248410" target="_blank" rel="noopener noreferrer" class="link-hover-effect">
+            <img src="3.jpg" onerror="this.onerror=null; this.src='https://placehold.co/48x48/2d3748/ffffff?text=WA';" alt="WhatsApp Logosu" class="h-12 w-12 rounded-full shadow-lg border-2 border-white">
+        </a>
+    </footer>
+
+</body>
+</html>

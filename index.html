@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NO1-Market</title>
+    <!-- Favicon eklendi -->
+    <link rel="icon" href="logo.png" type="image/png">
+
+    <!-- Tailwind CSS ve Montserrat, Cinzel fontlarını dahil ediyoruz. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #1a202c; /* Koyu gri arka plan */
+            color: #ffffff; /* Varsayılan metin rengi */
+            min-height: 100vh;
+        }
+        .link-hover-effect {
+            transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+        }
+        .link-hover-effect:hover {
+            transform: scale(1.05);
+        }
+        .button-hover-effect {
+            transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+        }
+        .button-hover-effect:hover {
+            transform: scale(1.05);
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+        .font-trajan-pro {
+            font-family: 'Cinzel', serif;
+        }
+    </style>
+</head>
+<body class="flex flex-col justify-between items-center p-4">
+
+    <!-- Üst kısım: NO1-Market başlığı, logo ve Kategoriler -->
+    <header class="w-full flex flex-col items-center p-2">
+        <div class="w-full flex justify-between items-center mb-6 px-4">
+            <!-- Sol üstteki logo ve başlık - responsive boyutlandırma eklendi -->
+            <div class="flex items-center">
+                <img src="logo.png" onerror="this.onerror=null;this.src='https://placehold.co/48x48/2d3748/ffffff?text=NO1';" alt="NO1-Market Logo" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full mr-2">
+                <div class="text-xl sm:text-3xl font-bold text-yellow-400 text-shadow">NO1-Market</div>
+            </div>
+            <!-- Boşluk bırakmak için -->
+            <div></div>
+        </div>
+
+        <!-- Orta üstteki kategoriler bölümü -->
+        <div class="text-center w-full">
+            <!-- "Kategoriler" yazısı için responsive boyutlandırma eklendi -->
+            <h2 class="text-3xl sm:text-5xl font-extrabold mb-8 text-shadow">Kategoriler</h2>
+            <ul class="flex flex-col sm:flex-row justify-center sm:space-x-16 space-y-4 sm:space-y-0 text-lg sm:text-xl font-medium list-none">
+                <li class="link-hover-effect text-yellow-200 hover:text-yellow-400 text-shadow">
+                    <a href="filim-keyfi.html" rel="noopener noreferrer" class="underline">Film Keyfi</a>
+                </li>
+                <li class="link-hover-effect text-yellow-200 hover:text-yellow-400 text-shadow">
+                    <a href="takas.html" rel="noopener noreferrer" class="underline">Takas</a>
+                </li>
+                <li class="link-hover-effect text-yellow-200 hover:text-yellow-400 text-shadow">
+                    <a href="sms-onayi.html" rel="noopener noreferrer" class="underline">SMS Onayı</a>
+                </li>
+                <li class="link-hover-effect text-yellow-200 hover:text-yellow-400 text-shadow">
+                    <a href="bizesat.html" rel="noopener noreferrer" class="underline">Bize Sat</a>
+                </li>
+                <li class="link-hover-effect text-yellow-200 hover:text-yellow-400 text-shadow">
+                    <a href="razer-gold.html" rel="noopener noreferrer" class="underline">Razer Gold</a>
+                </li>
+                <li class="link-hover-effect text-yellow-200 hover:text-yellow-400 text-shadow">
+                    <a href="satınal.html" rel="noopener noreferrer" class="underline">Satın Al</a>
+                </li>
+                <li class="link-hover-effect text-yellow-200 hover:text-yellow-400 text-shadow">
+                    <a href="hakkinda.html" rel="noopener noreferrer" class="underline">Hakkında</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Ana içerik kısmı: "Güvenli Ticaret" yazısı ve yeni bilgilendirme metni -->
+    <main class="flex-grow flex flex-col items-center justify-center p-4 w-full max-w-4xl">
+        <div class="bg-gray-800 p-8 rounded-lg shadow-xl text-center mb-8 w-full">
+            <h1 class="font-trajan-pro text-3xl sm:text-6xl font-bold text-red-500 text-shadow mb-4">
+                Güvenli Ticaret
+            </h1>
+            <p class="text-gray-300 text-lg sm:text-xl leading-relaxed">
+                NO1-Market olarak, alışverişlerinizde tam güvenliği sağlıyoruz. Tüm işlemlerimiz Telegram ve WhatsApp üzerinden, şeffaf ve güvenilir bir ortamda gerçekleştirilir. Ürünlerinizi teslim alana kadar paranız güvence altındadır. Güvenli alışverişin keyfini çıkarın!
+            </p>
+        </div>
+
+        <div class="w-full flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-8 text-center">
+            <a href="https://t.me/razergoldalsat" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-blue-600 text-white font-bold py-3 px-6 rounded-full button-hover-effect hover:bg-blue-700">
+                İlan Kanalı
+            </a>
+            <a href="https://t.me/+7BdxodMvnwIyOWFk" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-blue-600 text-white font-bold py-3 px-6 rounded-full button-hover-effect hover:bg-blue-700">
+                Market Kanalı
+            </a>
+            <a href="https://t.me/no1marketduyuru" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-blue-600 text-white font-bold py-3 px-6 rounded-full button-hover-effect hover:bg-blue-700">
+                Duyuru Kanalı
+            </a>
+        </div>
+    </main>
+
+    <!-- Alt kısım: Yeni eklenen bilgi bölümü -->
+    <section class="bg-gray-800 p-8 rounded-lg shadow-xl text-center mt-8 mb-8 w-full max-w-4xl">
+        <h3 class="text-2xl font-bold mb-4 text-yellow-400">Yasal Bilgilendirme ve İletişim</h3>
+        <ul class="text-gray-300 text-base leading-relaxed mb-4 list-none p-0 flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-8">
+            <!-- Linkler güncellendi, her biri ayrı bir sayfaya gidiyor -->
+            <li><a href="mesafeli-satis-sozlesmesi.html" rel="noopener noreferrer" class="underline hover:text-yellow-400">Mesafeli Satış Sözleşmesi</a></li>
+            <li><a href="gizlilik-politikasi.html" rel="noopener noreferrer" class="underline hover:text-yellow-400">Gizlilik Politikası</a></li>
+            <li><a href="kullanim-kosullari.html" rel="noopener noreferrer" class="underline hover:text-yellow-400">Kullanım Koşulları</a></li>
+            <li><a href="iade-ve-iptal-kosullari.html" rel="noopener noreferrer" class="underline hover:text-yellow-400">İade ve İptal Koşulları</a></li>
+            <li><a href="cerez-politikasi.html" rel="noopener noreferrer" class="underline hover:text-yellow-400">Çerez Politikası</a></li>
+        </ul>
+    </section>
+
+    <!-- Alt kısım: Telegram ve WhatsApp logoları -->
+    <footer class="flex justify-center space-x-6 p-4 mt-8">
+        <a href="https://t.me/mehmetkahraman019" target="_blank" rel="noopener noreferrer" class="link-hover-effect">
+            <img src="2.jpg" onerror="this.onerror=null;this.src='https://placehold.co/48x48/2d3748/ffffff?text=TG';" alt="Telegram Logosu" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full shadow-lg border-2 border-white">
+        </a>
+        <a href="https://wa.me/5397248410" target="_blank" rel="noopener noreferrer" class="link-hover-effect">
+            <img src="3.jpg" onerror="this.onerror=null;this.src='https://placehold.co/48x48/2d3748/ffffff?text=WA';" alt="WhatsApp Logosu" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full shadow-lg border-2 border-white">
+        </a>
+    </footer>
+
+    <!-- Yeni eklenen: Sayfa yüklenince çıkan, kabul edilmeden kapanmayan pop-up -->
+    <div id="liability-modal" class="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-75 z-50">
+        <div class="bg-gray-900 p-8 rounded-lg shadow-2xl text-center max-w-xl mx-4 transform transition-transform duration-300 scale-100">
+            <h2 class="text-3xl font-bold text-red-500 mb-4 font-trajan-pro text-shadow">Önemli Bilgilendirme</h2>
+            <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                Dikkat!
+
+                ikkat!
+
+                Bu sitede sunulan numaralar ve SMS onayları sadece yasal amaçlarla kullanılmalıdır.
+                Kötüye kullanım durumunda tüm sorumluluk kullanıcıya aittir.
+                Hizmet sağlayıcı, yasa dışı işlemlerden sorumlu tutulamaz.
+                
+                Bu uyarıyı okuyup kabul ettiğinizi onaylayarak devam ediniz
+            </p>
+            <button id="accept-button" class="w-full bg-red-600 text-white font-bold py-3 px-6 rounded-full button-hover-effect hover:bg-red-700">
+                Bu Uyarıyı Okudum, Anladım ve Kabul Ediyorum.
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Modal elemanını ve kabul etme düğmesini seçiyoruz
+        const modal = document.getElementById('liability-modal');
+        const acceptButton = document.getElementById('accept-button');
+
+        // "Kabul Et" düğmesine tıklandığında pop-up'ı gizle
+        acceptButton.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

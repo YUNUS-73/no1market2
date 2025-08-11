@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İade ve İptal Koşulları - NO1-Market</title>
+    <!-- Favicon -->
+    <link rel="icon" href="logo.png" type="image/png">
+
+    <!-- 
+        Maksimum Güvenlik İyileştirmesi: Content Security Policy (CSP)
+        Bu meta etiketi, sitenizin hangi kaynaklardan içerik (JS, CSS, görseller, fontlar)
+        yükleyebileceğini en katı şekilde belirler. Bu, Cross-Site Scripting (XSS) saldırılarını
+        önlemeye yardımcı olur. Sadece güvenli ve tanımlanmış kaynaklardan yüklemeye
+        izin verir.
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://cdn.tailwindcss.com https://fonts.googleapis.com https://*.gstatic.com; style-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://placehold.co; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; connect-src 'self' https://api.whatsapp.com https://t.me; object-src 'none';">
+
+    <!-- Tailwind CSS and Montserrat, Cinzel fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #1a202c;
+            color: #ffffff;
+            min-height: 100vh;
+        }
+        .link-hover-effect {
+            transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+        }
+        .link-hover-effect:hover {
+            transform: scale(1.05);
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+        .font-trajan-pro {
+            font-family: 'Cinzel', serif;
+        }
+    </style>
+</head>
+<body class="flex flex-col justify-between items-center p-4">
+
+    <!-- Header section with title and homepage link -->
+    <header class="w-full flex justify-between items-center p-2 px-4">
+        <div class="flex items-center">
+            <img src="logo.png" onerror="this.onerror=null;this.src='https://placehold.co/48x48/2d3748/ffffff?text=NO1';" alt="NO1-Market Logo" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full mr-2">
+            <div class="text-xl sm:text-3xl font-bold text-yellow-400 text-shadow">NO1-Market</div>
+        </div>
+        <a href="index.html" class="link-hover-effect text-yellow-200 hover:text-yellow-400 text-shadow text-sm sm:text-base">Anasayfa</a>
+    </header>
+
+    <!-- Main content: Return and Cancellation Policy -->
+    <main class="flex-grow flex flex-col items-center p-4 w-full max-w-4xl">
+        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-8 w-full">
+            <h1 class="font-trajan-pro text-3xl sm:text-4xl font-bold text-red-500 text-shadow mb-8 text-center">
+                İade ve İptal Koşulları
+            </h1>
+
+            <section class="text-gray-300 text-base leading-relaxed space-y-6">
+                <!-- General introduction -->
+                <div>
+                    <p>
+                        NO1-Market üzerinden gerçekleştirdiğiniz alışverişlerde, ürünlerin dijital doğası ve anında erişim imkanı nedeniyle iade ve iptal süreçleri belirli koşullara tabidir. Bu metin, haklarınızı ve yükümlülüklerinizi detaylandırmaktadır.
+                    </p>
+                </div>
+
+                <!-- Section: İade Koşulları -->
+                <div>
+                    <h2 class="text-xl font-bold text-yellow-400 mb-2">1. İade Koşulları</h2>
+                    <p>
+                        Dijital ürünlerin (yazılım, oyun içi para birimi, sanal eşyalar vb.) niteliği gereği, bir kez satın alındıktan ve alıcıya iletildikten sonra iadesi mümkün değildir. Ürünün teslimatı, alıcının hesabına aktarılması veya ürün kodunun gönderilmesi ile tamamlanmış sayılır. Bu aşamadan sonra ürünün tekrar SATICI'ya iadesi söz konusu olamaz.
+                    </p>
+                    <p class="mt-2">
+                        Sadece, satın alınan ürünün teknik bir hata veya SATICI kaynaklı bir sorun nedeniyle çalışmaması durumunda destek ekibimiz ile iletişime geçmeniz gerekmektedir. Sorunun çözülememesi durumunda, iade veya değişim hakkınız doğabilir.
+                    </p>
+                </div>
+                
+                <!-- Section: İptal Koşulları -->
+                <div>
+                    <h2 class="text-xl font-bold text-yellow-400 mb-2">2. İptal Koşulları</h2>
+                    <p>
+                        Siparişin iptali, ürün alıcıya teslim edilmeden önce mümkündür. Siparişinizin durumunu öğrenmek ve iptal talebinde bulunmak için lütfen destek kanallarımızdan (WhatsApp, Telegram) bize ulaşın. Ürünün teslimatı tamamlandıktan sonra iptal işlemi yapılamaz.
+                    </p>
+                </div>
+
+                <!-- Section: Cayma Hakkı -->
+                <div>
+                    <h2 class="text-xl font-bold text-yellow-400 mb-2">3. Cayma Hakkı</h2>
+                    <p>
+                        Tüketicinin Korunması Hakkında Kanun'da belirtilen cayma hakkı, "Elektronik ortamda anında ifa edilen hizmetler veya tüketiciye anında teslim edilen gayrimaddi mallara ilişkin sözleşmeler" kapsamında geçerli değildir. NO1-Market üzerinden satın alınan ürünlerin çoğu bu kategoriye girmektedir. Bu nedenle, ürün alıcıya teslim edildikten sonra cayma hakkı kullanılamaz.
+                    </p>
+                </div>
+
+                <!-- Final notice -->
+                <div class="mt-8 text-center text-sm text-gray-500">
+                    <p>
+                        Bu koşullar, yasal düzenlemeler çerçevesinde oluşturulmuştur. Herhangi bir uyuşmazlık durumunda T.C. İstanbul Mahkemeleri ve İcra Daireleri yetkilidir.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer section with legal links and social media -->
+    <footer class="flex flex-col items-center p-4 mt-8 w-full">
+        <div class="bg-gray-800 p-8 rounded-lg shadow-xl text-center w-full max-w-4xl">
+            <h3 class="text-2xl font-bold mb-4 text-yellow-400">Yasal Bilgilendirme ve İletişim</h3>
+            <ul class="text-gray-300 text-base leading-relaxed mb-4 list-none p-0 flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-8">
+                <li><a href="mesafeli-satis-sozlesmesi.html" rel="noopener noreferrer" class="underline hover:text-yellow-400">Mesafeli Satış Sözleşmesi</a></li>
+                <li><a href="gizlilik-politikasi.html" rel="noopener noreferrer" class="underline hover:text-yellow-400">Gizlilik Politikası</a></li>
+                <li><a href="iade-ve-iptal-kosullari.html" rel="noopener noreferrer" class="underline hover:text-yellow-400">İade ve İptal Koşulları</a></li>
+                <li><a href="iletisim.html" rel="noopener noreferrer" class="underline hover:text-yellow-400">İletişim</a></li>
+            </ul>
+            <p class="text-sm text-gray-500 mt-4">
+                
+            </p>
+        </div>
+        <div class="flex justify-center space-x-6 p-4 mt-8 w-full">
+            <a href="https://t.me/mehmetkahraman019" target="_blank" rel="noopener noreferrer" class="link-hover-effect">
+                <img src="2.jpg" onerror="this.onerror=null;this.src='https://placehold.co/48x48/2d3748/ffffff?text=TG';" alt="Telegram Logosu" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full shadow-lg border-2 border-white">
+            </a>
+            <a href="https://wa.me/5397248410" target="_blank" rel="noopener noreferrer" class="link-hover-effect">
+                <img src="3.jpg" onerror="this.onerror=null;this.src='https://placehold.co/48x48/2d3748/ffffff?text=WA';" alt="WhatsApp Logosu" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full shadow-lg border-2 border-white">
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>

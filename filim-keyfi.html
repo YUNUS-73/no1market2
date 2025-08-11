@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Keyfi</title>
+    <!-- Favicon eklendi -->
+    <link rel="icon" href="logo.png" type="image/png">
+    
+    <!-- 
+        Maksimum Güvenlik İyileştirmesi: Content Security Policy (CSP)
+        Bu meta etiketi, sitenizin hangi kaynaklardan içerik (JS, CSS, görseller, fontlar)
+        yükleyebileceğini en katı şekilde belirler. Bu, Cross-Site Scripting (XSS) saldırılarını
+        önlemeye yardımcı olur. Sadece güvenli ve tanımlanmış kaynaklardan yüklemeye
+        izin verir.
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://cdn.tailwindcss.com https://fonts.googleapis.com https://*.gstatic.com; style-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://placehold.co; script-src 'self' https://cdn.tailwindcss.com; connect-src 'self';">
+
+    <!-- Tailwind CSS ve Montserrat, Cinzel fontlarını dahil ediyoruz. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #1a202c; /* Koyu gri arka plan */
+            color: #ffffff; /* Varsayılan metin rengi */
+            min-height: 100vh;
+        }
+        .link-hover-effect {
+            transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+        }
+        .link-hover-effect:hover {
+            transform: scale(1.05);
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+    </style>
+</head>
+<body class="flex flex-col justify-between items-center p-4">
+
+    <!-- Üst kısım: NO1-Market başlığı, logo ve Ana Sayfa linki -->
+    <header class="w-full flex justify-between items-center p-2 px-4">
+        <!-- Başlık için responsive boyutlandırma eklendi -->
+        <div class="flex items-center">
+            <!-- Görsel yüklenemezse yedek resim gösterilmesi için 'onerror' eklendi -->
+            <img src="logo.png" onerror="this.onerror=null; this.src='https://placehold.co/48x48/2d3748/ffffff?text=NO1';" alt="NO1-Market Logo" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full mr-2">
+            <div class="text-xl sm:text-3xl font-bold text-yellow-400 text-shadow">NO1-Market</div>
+        </div>
+        <!-- Ana sayfaya geri dönmek için link -->
+        <a href="index.html" class="link-hover-effect text-yellow-200 hover:text-yellow-400 text-shadow text-sm sm:text-base">Anasayfa</a>
+    </header>
+
+    <!-- Ana içerik kısmı -->
+    <main class="flex-grow flex flex-col items-center justify-start py-8 px-4 w-full max-w-7xl">
+        <!-- Başlık için responsive boyutlandırma eklendi -->
+        <h1 class="text-3xl sm:text-5xl font-extrabold mb-8 text-shadow">Film Keyfi</h1>
+        
+        <!-- Film içeriklerinin yer alacağı bölüm. Mobil cihazlarda alt alta, tablet ve masaüstünde ise yan yana dizilir. -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 w-full">
+            <!-- TOD TV Kartı: tod-tv.html sayfasına yönleniyor -->
+            <a href="tod-tv.html" class="bg-gray-800 p-4 rounded-lg shadow-lg flex flex-col items-center transform transition duration-300 hover:scale-105">
+                <img src="TOD.jpg" onerror="this.onerror=null; this.src='https://placehold.co/400x250/2d3748/ffffff?text=TOD+TV';" alt="TOD TV Afişi" class="w-full h-auto rounded-lg mb-4">
+                <h3 class="text-xl font-bold text-green-400 text-center">TOD TV</h3>
+                <p class="text-red-400 text-center mt-2 text-xl font-bold">Fiyat: 45TL 10 ve Üzeri 40TL</p>
+            </a>
+            <!-- D Smart Kartı: d-smart.html sayfasına yönleniyor -->
+            <a href="d-smart.html" class="bg-gray-800 p-4 rounded-lg shadow-lg flex flex-col items-center transform transition duration-300 hover:scale-105">
+                <img src="D-smart.png" onerror="this.onerror=null; this.src='https://placehold.co/400x250/2d3748/ffffff?text=D+Smart';" alt="D Smart Afişi" class="w-full h-auto rounded-lg mb-4">
+                <h3 class="text-xl font-bold text-blue-400 text-center">D Smart</h3>
+                <p class="text-red-400 text-center mt-2 text-xl font-bold">Fiyat: 30TL</p>
+            </a>
+            <!-- Exxen Kartı: exxen.html sayfasına yönleniyor -->
+            <a href="exxen.html" class="bg-gray-800 p-4 rounded-lg shadow-lg flex flex-col items-center transform transition duration-300 hover:scale-105">
+                <img src="EXXEN.png" onerror="this.onerror=null; this.src='https://placehold.co/400x250/2d3748/ffffff?text=Exxen';" alt="Exxen Afişi" class="w-full h-auto rounded-lg mb-4">
+                <h3 class="text-xl font-bold text-pink-400 text-center">Exxen</h3>
+                <p class="text-red-400 text-center mt-2 text-xl font-bold">Fiyat: 35TL</p>
+            </a>
+            
+            <!-- YENİ EKLENEN: S Sport Plus Kartı -->
+            <a href="sssport.html" class="bg-gray-800 p-4 rounded-lg shadow-lg flex flex-col items-center transform transition duration-300 hover:scale-105">
+                <img src="ssport.png" onerror="this.onerror=null; this.src='https://placehold.co/400x250/2d3748/ffffff?text=S+Sport+Plus';" alt="S Sport Plus Afişi" class="w-full h-auto rounded-lg mb-4">
+                <h3 class="text-xl font-bold text-red-500 text-center">S Sport Plus</h3>
+                <p class="text-red-400 text-center mt-2 text-xl font-bold">Fiyat: 80TL</p>
+            </a>
+            
+        </div>
+    </main>
+
+    <!-- Alt kısım: Telegram ve WhatsApp logoları -->
+    <footer class="flex justify-center space-x-6 p-4">
+        <!-- 'rel="noopener noreferrer"' eklendi -->
+        <a href="https://t.me/mehmetkahraman019" target="_blank" rel="noopener noreferrer" class="link-hover-effect">
+            <img src="2.jpg" onerror="this.onerror=null; this.src='https://placehold.co/48x48/2d3748/ffffff?text=TG';" alt="Telegram Logosu" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full shadow-lg border-2 border-white">
+        </a>
+        <!-- 'rel="noopener noreferrer"' eklendi -->
+        <a href="https://wa.me/5397248410" target="_blank" rel="noopener noreferrer" class="link-hover-effect">
+            <img src="3.jpg" onerror="this.onerror=null; this.src='https://placehold.co/48x48/2d3748/ffffff?text=WA';" alt="WhatsApp Logosu" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full shadow-lg border-2 border-white">
+        </a>
+    </footer>
+
+</body>
+</html>

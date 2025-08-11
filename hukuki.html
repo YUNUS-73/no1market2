@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hukuki Belgeler - NO1-Market</title>
+    <!-- Favicon -->
+    <link rel="icon" href="logo.png" type="image/png">
+    <!-- Tailwind CSS ve Montserrat fontları -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #1a202c; /* Koyu gri arka plan */
+            color: #ffffff; /* Varsayılan metin rengi */
+        }
+        .container {
+            max-width: 1200px;
+        }
+        .product-card {
+            background-color: #2d3748; /* Kartlar için biraz daha açık gri */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center min-h-screen p-4">
+
+    <!-- Üst kısım: NO1-Market başlığı, logo ve Anasayfa linki -->
+    <header class="w-full flex justify-between items-center p-2 px-4">
+        <div class="flex items-center">
+            <img src="logo.png" onerror="this.onerror=null;this.src='https://placehold.co/48x48/2d3748/ffffff?text=NO1';" alt="NO1-Market Logo" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full mr-2">
+            <div class="text-xl sm:text-3xl font-bold text-yellow-400 text-shadow">NO1-Market</div>
+        </div>
+        <!-- Anasayfa'ya geri dönmek için link -->
+        <a href="index.html" class="link-hover-effect text-yellow-200 hover:text-yellow-400 text-shadow text-sm sm:text-base">Anasayfa</a>
+    </header>
+
+    <main class="w-full container my-8">
+        <div class="bg-gray-800 p-8 rounded-lg shadow-xl">
+            <h1 class="text-3xl font-bold text-yellow-400 mb-6 text-center text-shadow">Hukuki Belgeler</h1>
+
+            <!-- Gizlilik Politikası Bölümü -->
+            <section class="mb-10 p-6 bg-gray-900 rounded-lg shadow-inner">
+                <h2 class="text-2xl font-bold text-green-400 mb-4">Gizlilik Politikası & KVKK</h2>
+                <div class="prose prose-invert text-gray-300">
+                    <p>Buraya Gizlilik Politikası metniniz gelecek. Bu metin, müşterilerinizin kişisel verilerini nasıl topladığınızı, işlediğinizi ve koruduğunuzu detaylı bir şekilde açıklamalıdır. KVKK'ya (Kişisel Verilerin Korunması Kanunu) uyumlu olması yasal olarak zorunludur.</p>
+                    <p><strong>Örnek konular:</strong></p>
+                    <ul>
+                        <li>Hangi kişisel veriler toplanır (isim, e-posta, telefon vb.)</li>
+                        <li>Veriler hangi amaçla kullanılır (sipariş işleme, pazarlama vb.)</li>
+                        <li>Veriler kimlerle paylaşılır (kargo firması, ödeme sağlayıcı vb.)</li>
+                        <li>Veri sahibinin hakları (bilgi edinme, silme vb.)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Mesafeli Satış Sözleşmesi Bölümü -->
+            <section class="mb-10 p-6 bg-gray-900 rounded-lg shadow-inner">
+                <h2 class="text-2xl font-bold text-green-400 mb-4">Mesafeli Satış Sözleşmesi</h2>
+                <div class="prose prose-invert text-gray-300">
+                    <p>Buraya Mesafeli Satış Sözleşmesi metniniz gelecek. Bu sözleşme, Tüketicinin Korunması Hakkında Kanun'a göre zorunludur ve ürün satışlarında satıcı ve alıcının hak ve yükümlülüklerini belirler.</p>
+                    <p><strong>Örnek konular:</strong></p>
+                    <ul>
+                        <li>Tarafların bilgileri</li>
+                        <li>Ürünün özellikleri, fiyatı ve ödeme şekli</li>
+                        <li>Teslimat koşulları ve masrafları</li>
+                        <li>Cayma hakkı (dijital ürünlerde cayma hakkı olmadığı bilgisi net belirtilmeli)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Kullanım Koşulları Bölümü -->
+            <section class="mb-10 p-6 bg-gray-900 rounded-lg shadow-inner">
+                <h2 class="text-2xl font-bold text-green-400 mb-4">Kullanım Koşulları</h2>
+                <div class="prose prose-invert text-gray-300">
+                    <p>Buraya Kullanım Koşulları metniniz gelecek. Bu belge, web sitenizin kullanım kurallarını ve şartlarını içerir.</p>
+                    <p><strong>Örnek konular:</strong></p>
+                    <ul>
+                        <li>Fikri mülkiyet hakları (logo, içerik vb.)</li>
+                        <li>Kullanıcı davranış kuralları</li>
+                        <li>Sorumluluk sınırlamaları</li>
+                        <li>Anlaşmazlıkların çözümü</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- İade ve İptal Politikası Bölümü -->
+            <section class="mb-10 p-6 bg-gray-900 rounded-lg shadow-inner">
+                <h2 class="text-2xl font-bold text-green-400 mb-4">İade ve İptal Politikası</h2>
+                <div class="prose prose-invert text-gray-300">
+                    <p>Buraya İade ve İptal Politikası metniniz gelecek. Özellikle dijital ürünler sattığınız için, kod teslimatından sonra iade yapılamayacağını burada açıkça belirtmelisiniz.</p>
+                    <p><strong>Örnek konular:</strong></p>
+                    <ul>
+                        <li>İade için gerekli şartlar ve süreler</li>
+                        <li>İptal koşulları</li>
+                        <li>Hangi durumlarda iade veya iptal yapılamayacağı</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Çerez Politikası Bölümü -->
+            <section class="p-6 bg-gray-900 rounded-lg shadow-inner">
+                <h2 class="text-2xl font-bold text-green-400 mb-4">Çerez Politikası</h2>
+                <div class="prose prose-invert text-gray-300">
+                    <p>Buraya Çerez Politikası metniniz gelecek. Bu belge, web sitenizde hangi çerezlerin kullanıldığını, bunların ne işe yaradığını ve kullanıcıların çerez ayarlarını nasıl yönetebileceğini açıklar.</p>
+                    <p><strong>Örnek konular:</strong></p>
+                    <ul>
+                        <li>Hangi tür çerezler kullanılır (zorunlu, analiz, reklam vb.)</li>
+                        <li>Çerezlerin amaçları</li>
+                        <li>Çerezleri nasıl devre dışı bırakabileceğiniz</li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Alt kısım: Telegram ve WhatsApp logoları -->
+    <footer class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-x-6 p-4 mt-8 w-full text-center sm:text-left">
+        <div class="flex justify-center space-x-6">
+            <a href="https://t.me/mehmetkahraman019" target="_blank" rel="noopener noreferrer" class="link-hover-effect">
+                <img src="2.jpg" onerror="this.onerror=null;this.src='https://placehold.co/48x48/2d3748/ffffff?text=TG';" alt="Telegram Logosu" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full shadow-lg border-2 border-white">
+            </a>
+            <a href="https://wa.me/5397248410" target="_blank" rel="noopener noreferrer" class="link-hover-effect">
+                <img src="3.jpg" onerror="this.onerror=null;this.src='https://placehold.co/48x48/2d3748/ffffff?text=WA';" alt="WhatsApp Logosu" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full shadow-lg border-2 border-white">
+            </a>
+        </div>
+    
+        <div class="flex flex-col space-y-2 mt-4 sm:mt-0 sm:ml-8">
+            <!-- Hukuki belgeler sayfasına yönlendiren linkler -->
+            <a href="hukuki.html#gizlilik-politikasi" class="text-sm hover:text-yellow-400">Gizlilik Politikası & KVKK</a>
+            <a href="hukuki.html#satis-sozlesmesi" class="text-sm hover:text-yellow-400">Mesafeli Satış Sözleşmesi</a>
+            <a href="hukuki.html#kullanim-kosullari" class="text-sm hover:text-yellow-400">Kullanım Koşulları</a>
+            <a href="hukuki.html#iade-politikasi" class="text-sm hover:text-yellow-400">İade ve İptal Politikası</a>
+            <a href="hukuki.html#cerez-politikasi" class="text-sm hover:text-yellow-400">Çerez Politikası</a>
+        </div>
+    </footer>
+</body>
+</html>

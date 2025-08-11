@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S Sport Plus Sat - NO1-Market</title>
+    <!-- Favicon eklendi -->
+    <link rel="icon" href="logo.png" type="image/png">
+    <!-- Tailwind CSS ve Montserrat fontlarını dahil ediyoruz. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #1a202c; /* Koyu gri arka plan */
+            color: #ffffff; /* Varsayılan metin rengi */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 1024px; /* Sabit genişlik */
+            margin: 0 auto; /* Ortalamak için */
+        }
+        @media (max-width: 1024px) {
+            .container {
+                width: 100%;
+                padding: 0 1rem; /* Küçük ekranlarda kenar boşluğu */
+            }
+        }
+        .link-hover-effect {
+            transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+        }
+        .link-hover-effect:hover {
+            transform: scale(1.05);
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+        .button-hover-effect {
+            transition: transform 0.2s ease-in-out;
+        }
+        .button-hover-effect:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="p-4">
+
+    <!-- Üst kısım: NO1-Market başlığı, logo ve Geri Dön linki -->
+    <header class="container flex justify-between items-center p-2 px-4">
+        <div class="flex items-center">
+            <img src="logo.png" onerror="this.onerror=null; this.src='https://placehold.co/48x48/2d3748/ffffff?text=NO1';" alt="NO1-Market Logo" class="h-12 w-12 rounded-full mr-2">
+            <div class="text-3xl font-bold text-yellow-400 text-shadow">NO1-Market</div>
+        </div>
+        <a href="filim-keyfi.html" class="link-hover-effect text-yellow-200 hover:text-yellow-400 text-shadow text-base">Geri Dön</a>
+    </header>
+
+    <main class="container bg-gray-800 p-8 rounded-lg shadow-xl mt-4 text-center">
+        <h1 class="text-4xl sm:text-5xl font-extrabold mb-8 text-shadow text-red-500">S Sport Plus Sat</h1>
+
+        <!-- Ürün görseli -->
+        <div class="mb-8">
+            <img src="ssport.png" onerror="this.onerror=null; this.src='https://placehold.co/800x400/2d3748/ffffff?text=S+Sport+Plus';" alt="S Sport Plus Görseli" class="product-image rounded-lg mx-auto w-full max-w-lg">
+        </div>
+
+        <!-- Ürün bilgisi ve fiyatlandırma -->
+        <div class="text-left max-w-2xl mx-auto">
+            <h2 class="text-3xl font-bold mb-4 text-red-500">Nasıl Satış Yapılır?</h2>
+            <p class="text-lg text-gray-300 mb-4 leading-relaxed">
+                Sahip olduğunuz S Sport Plus hesaplarını bize kolayca satabilirsiniz. Hesapları bize ilettikten sonra, anlaşma sağlanan fiyattan ödemeniz hızlıca gerçekleştirilir.
+            </p>
+            <div class="bg-gray-700 p-6 rounded-lg mb-6">
+                <h3 class="text-2xl font-bold mb-2 text-green-400">Güncel Fiyatlandırma</h3>
+                <p class="text-xl font-extrabold text-white">Adet başına 80 TL</p>
+                <p class="text-sm text-gray-400 mt-2">Güncel fiyatlandırma ve detaylı bilgi için lütfen bizimle iletişime geçin.</p>
+            </div>
+            
+            <!-- Telegram ve WhatsApp butonları -->
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="https://t.me/mehmetkahraman019" target="_blank" class="inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-full button-hover-effect hover:bg-blue-700">
+                    Telegram ile Sat
+                </a>
+                <a href="https://wa.me/5397248410" target="_blank" class="inline-block bg-green-500 text-white font-bold py-3 px-6 rounded-full button-hover-effect hover:bg-green-600">
+                    WhatsApp ile Sat
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Alt kısım: Telegram ve WhatsApp logoları -->
+    <footer class="container flex justify-center space-x-6 p-4 mt-8">
+        <a href="https://t.me/mehmetkahraman019" target="_blank" class="link-hover-effect">
+            <img src="2.jpg" onerror="this.onerror=null; this.src='https://placehold.co/48x48/2d3748/ffffff?text=TG';" alt="Telegram Logosu" class="h-12 w-12 rounded-full shadow-lg border-2 border-white">
+        </a>
+        <a href="https://wa.me/5397248410" target="_blank" class="link-hover-effect">
+            <img src="3.jpg" onerror="this.onerror=null; this.src='https://placehold.co/48x48/2d3748/ffffff?text=WA';" alt="WhatsApp Logosu" class="h-12 w-12 rounded-full shadow-lg border-2 border-white">
+        </a>
+    </footer>
+
+</body>
+</html>

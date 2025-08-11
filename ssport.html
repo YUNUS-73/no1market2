@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>S Sport Plus - NO1-Market</title>
+    <!-- Favicon eklendi -->
+    <link rel="icon" href="logo.png" type="image/png">
+    <!-- Tailwind CSS ve Montserrat fontlarını dahil ediyoruz. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #1a202c; /* Koyu gri arka plan */
+            color: #ffffff; /* Varsayılan metin rengi */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        /* Sabit genişlikte ana konteyner */
+        .container {
+            width: 1024px; /* Sabit genişlik */
+            margin: 0 auto; /* Ortalamak için */
+        }
+        .product-card {
+            background-color: #2d3748;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s ease-in-out;
+        }
+        .product-card:hover {
+            transform: scale(1.03);
+        }
+        .link-hover-effect {
+            transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+        }
+        .link-hover-effect:hover {
+            transform: scale(1.05);
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+    </style>
+</head>
+<body class="p-4">
+
+    <!-- Üst kısım: NO1-Market başlığı, logo ve Ana Sayfa linki -->
+    <header class="container flex justify-between items-center p-2 px-4">
+        <div class="flex items-center">
+            <img src="logo.png" alt="NO1-Market Logo" class="h-12 w-12 rounded-full mr-2">
+            <div class="text-3xl font-bold text-yellow-400 text-shadow">NO1-Market</div>
+        </div>
+        <a href="bizesat.html" class="link-hover-effect text-yellow-200 hover:text-yellow-400 text-shadow text-base">Geri Dön</a>
+    </header>
+
+    <main class="container bg-gray-800 p-8 rounded-lg shadow-xl mt-4">
+        <h1 class="text-5xl font-extrabold text-center mb-8 text-red-500">S Sport Plus</h1>
+
+        <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+            <!-- Ürün Görseli -->
+            <div class="w-full md:w-1/2 flex justify-center">
+                <img src="ssport.png" alt="S Sport Plus Görseli" class="rounded-lg shadow-xl" style="width: 300px;">
+            </div>
+
+            <!-- Ürün Bilgileri -->
+            <div class="w-full md:w-1/2">
+                <h2 class="text-3xl font-bold mb-4 text-white">Satış Fiyatı</h2>
+                <div class="text-lg mb-6">
+                    <p class="mb-2">İstediğin S Sport Plus üyeliğini anında ve güvenle alabilirsin.</p>
+                    <p>Fiyatımız sadece <span class="font-extrabold text-red-500">40TL 10 ve Üzeri 45TL</span>'dir. En uygun fiyata sahip olmak için bizimle iletişime geçmen yeterli.</p>
+                </div>
+                
+                <h3 class="text-2xl font-bold mb-4 text-white">Nasıl Alınır?</h3>
+                <ul class="list-disc list-inside space-y-2 mb-6 text-lg">
+                    <li>Aşağıdaki iletişim kanallarımızdan bize ulaş.</li>
+                    <li>İstediğin S Sport Plus üyeliğini ve miktarını bize bildir.</li>
+                    <li>Sana en uygun teklifi sunalım.</li>
+                    <li>Anlaştığımız takdirde ödemeyi hızlıca yap ve üyeliğine hemen kavuş.</li>
+                </ul>
+
+                <!-- İletişim Butonları -->
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://t.me/mehmetkahraman019" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg text-center transition-colors">
+                        Telegram'dan Ulaş
+                    </a>
+                    <a href="https://wa.me/5397248410" target="_blank" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg text-center transition-colors">
+                        WhatsApp'tan Ulaş
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Alt kısım: Telegram ve WhatsApp logoları -->
+    <footer class="container flex justify-center space-x-6 p-4 mt-8">
+        <a href="https://t.me/mehmetkahraman019" target="_blank" class="link-hover-effect">
+            <img src="2.jpg" alt="Telegram Logosu" class="h-12 w-12 rounded-full shadow-lg border-2 border-white">
+        </a>
+        <a href="https://wa.me/5397248410" target="_blank" class="link-hover-effect">
+            <img src="3.jpg" alt="WhatsApp Logosu" class="h-12 w-12 rounded-full shadow-lg border-2 border-white">
+        </a>
+    </footer>
+
+</body>
+</html>

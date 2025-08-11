@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesafeli Satış Sözleşmesi - NO1-Market</title>
+    <!-- Favicon -->
+    <link rel="icon" href="logo.png" type="image/png">
+    
+    <!-- 
+        Maksimum Güvenlik İyileştirmesi: Content Security Policy (CSP)
+        Bu meta etiketi, sitenizin hangi kaynaklardan içerik (JS, CSS, görseller, fontlar)
+        yükleyebileceğini en katı şekilde belirler. Bu, Cross-Site Scripting (XSS) saldırılarını
+        önlemeye yardımcı olur. Sadece güvenli ve tanımlanmış kaynaklardan yüklemeye
+        izin verir.
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://cdn.tailwindcss.com https://fonts.googleapis.com https://*.gstatic.com; style-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://placehold.co; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; connect-src 'self' https://api.whatsapp.com https://t.me; object-src 'none';">
+
+    <!-- Tailwind CSS ve Montserrat, Cinzel fontları -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #1a202c;
+            color: #ffffff;
+            min-height: 100vh;
+        }
+        .link-hover-effect {
+            transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+        }
+        .link-hover-effect:hover {
+            transform: scale(1.05);
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+        .font-trajan-pro {
+            font-family: 'Cinzel', serif;
+        }
+    </style>
+</head>
+<body class="flex flex-col justify-between items-center p-4">
+
+    <!-- Üst kısım: Başlık ve Anasayfa linki -->
+    <header class="w-full flex justify-between items-center p-2 px-4">
+        <div class="flex items-center">
+            <img src="logo.png" onerror="this.onerror=null;this.src='https://placehold.co/48x48/2d3748/ffffff?text=NO1';" alt="NO1-Market Logo" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full mr-2">
+            <div class="text-xl sm:text-3xl font-bold text-yellow-400 text-shadow">NO1-Market</div>
+        </div>
+        <a href="index.html" rel="noopener noreferrer" class="link-hover-effect text-yellow-200 hover:text-yellow-400 text-shadow text-sm sm:text-base">Anasayfa</a>
+    </header>
+
+    <!-- Ana içerik: Mesafeli Satış Sözleşmesi metni -->
+    <main class="flex-grow flex flex-col items-center p-4 w-full max-w-4xl">
+        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-8 w-full">
+            <h1 class="font-trajan-pro text-3xl sm:text-4xl font-bold text-red-500 text-shadow mb-8 text-center">
+                Mesafeli Satış Sözleşmesi
+            </h1>
+
+            <section class="text-gray-300 text-base leading-relaxed space-y-6">
+                <!-- MADDE 1 -->
+                <div>
+                    <h2 class="text-xl font-bold text-yellow-400 mb-2">MADDE 1 - SÖZLEŞMENİN TARAFLARI</h2>
+                    <p>İşbu sözleşme, aşağıda detayları belirtilen SATICI ile ALICI arasında imzalanmıştır.</p>
+                    <ul class="list-disc list-inside mt-2">
+                        <li><strong>SATICI:</strong> NO1-Market</li>
+                        <li><strong>Adres:</strong> İstanbul / Sultanbeyli</li>
+                        <li><strong>ALICI:</strong> [Alıcının Adı ve Soyadı]</li>
+                        <li><strong>Adres:</strong> [Alıcının Adresi]</li>
+                    </ul>
+                </div>
+                
+                <!-- MADDE 2 -->
+                <div>
+                    <h2 class="text-xl font-bold text-yellow-400 mb-2">MADDE 2 - SÖZLEŞMENİN KONUSU</h2>
+                    <p>İşbu sözleşmenin konusu, ALICI'nın SATICI'ya ait internet sitesi üzerinden elektronik ortamda siparişini verdiği aşağıda nitelikleri ve satış fiyatı belirtilen ürünün satışı ve teslimi ile ilgili olarak 6502 sayılı Tüketicinin Korunması Hakkında Kanun ve Mesafeli Sözleşmeler Yönetmeliği hükümleri gereğince tarafların hak ve yükümlülüklerinin belirlenmesidir.</p>
+                </div>
+
+                <!-- MADDE 3 -->
+                <div>
+                    <h2 class="text-xl font-bold text-yellow-400 mb-2">MADDE 3 - SÖZLEŞMEYE KONU ÜRÜN BİLGİLERİ</h2>
+                    <ul class="list-disc list-inside mt-2">
+                        <li><strong>Ürün Adı:</strong> [Ürün Adı]</li>
+                        <li><strong>Miktarı:</strong> [Ürün Miktarı]</li>
+                        <li><strong>Satış Fiyatı:</strong> [Satış Fiyatı] TL</li>
+                        <li><strong>Ödeme Şekli:</strong> [Ödeme Şekli]</li>
+                    </ul>
+                    <p class="mt-4">Sipariş edilen ürünlerin özellikleri ve fiyatı, ürün açıklamalarında belirtildiği gibidir.</p>
+                </div>
+
+                <!-- MADDE 4 -->
+                <div>
+                    <h2 class="text-xl font-bold text-yellow-400 mb-2">MADDE 4 - GENEL HÜKÜMLER</h2>
+                    <p>4.1. ALICI, internet sitesinde sözleşme konusu ürünün temel nitelikleri, satış fiyatı ve ödeme şekli ile teslimata ilişkin ön bilgileri okuyup bilgi sahibi olduğunu ve elektronik ortamda gerekli teyidi verdiğini beyan eder.</p>
+                    <p>4.2. Sözleşme konusu ürün, yasal 30 günlük süreyi aşmamak koşulu ile her bir ürün için ALICI'nın yerleşim yerinin uzaklığına bağlı olarak internet sitesinde açıklanan süre içinde ALICI veya gösterdiği adresteki kişi/kuruluşa teslim edilir.</p>
+                    <p>4.3. Ödeme, kripto para birimleri veya belirlenen diğer ödeme yöntemleri ile gerçekleştirilir.</p>
+                </div>
+
+                <!-- MADDE 5 -->
+                <div>
+                    <h2 class="text-xl font-bold text-yellow-400 mb-2">MADDE 5 - CAYMA HAKKI</h2>
+                    <p>ALICI, sözleşme konusu ürünün teslim tarihinden itibaren 14 (ondört) gün içinde hiçbir gerekçe göstermeksizin ve cezai şart ödemeksizin sözleşmeden cayma hakkına sahiptir. Cayma hakkının kullanılması için bu süre içinde SATICI'ya WhatsApp veya Telegram üzerinden bildirimde bulunulması şarttır.</p>
+                </div>
+
+                <!-- MADDE 6 -->
+                <div>
+                    <h2 class="text-xl font-bold text-yellow-400 mb-2">MADDE 6 - YETKİLİ MAHKEME</h2>
+                    <p>İşbu sözleşmenin uygulanmasından doğacak uyuşmazlıklarda, T.C. İstanbul Mahkemeleri ve İcra Daireleri yetkilidir.</p>
+                </div>
+
+                <div class="mt-8 text-center text-sm text-gray-500">
+                    <p>İşbu sözleşme, taraflarca okunarak onaylanmıştır.</p>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <!-- Alt kısım: Bilgilendirme ve Sosyal Medya logoları -->
+    <footer class="flex flex-col items-center p-4 mt-8 w-full">
+        <div class="bg-gray-800 p-8 rounded-lg shadow-xl text-center w-full max-w-4xl">
+            <h3 class="text-2xl font-bold mb-4 text-yellow-400">Yasal Bilgilendirme ve İletişim</h3>
+            <ul class="text-gray-300 text-base leading-relaxed mb-4 list-none p-0 flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-8">
+                <li><a href="mesafeli-satis-sozlesmesi.html" rel="noopener noreferrer" class="underline hover:text-yellow-400">Mesafeli Satış Sözleşmesi</a></li>
+                <li><a href="gizlilik-politikasi.html" rel="noopener noreferrer" class="underline hover:text-yellow-400">Gizlilik Politikası</a></li>
+                <li><a href="iade-ve-iptal-kosullari.html" rel="noopener noreferrer" class="underline hover:text-yellow-400">İade ve İptal Koşulları</a></li>
+                <li><a href="iletisim.html" rel="noopener noreferrer" class="underline hover:text-yellow-400">İletişim</a></li>
+            </ul>
+            <p class="text-sm text-gray-500 mt-4">
+                
+            </p>
+        </div>
+        <div class="flex justify-center space-x-6 p-4 mt-8 w-full">
+            <a href="https://t.me/mehmetkahraman019" target

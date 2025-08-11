@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - NO1-Market</title>
+    <!-- Favicon -->
+    <link rel="icon" href="logo.png" type="image/png">
+
+    <!-- 
+        Maksimum Güvenlik İyileştirmesi: Content Security Policy (CSP)
+        Bu meta etiketi, sitenizin hangi kaynaklardan içerik (JS, CSS, görseller, fontlar)
+        yükleyebileceğini en katı şekilde belirler. Bu, Cross-Site Scripting (XSS) saldırılarını
+        önlemeye yardımcı olur. Sadece güvenli ve tanımlanmış kaynaklardan yüklemeye
+        izin verir.
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://cdn.tailwindcss.com https://fonts.googleapis.com https://*.gstatic.com; style-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://placehold.co; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; connect-src 'self' https://api.whatsapp.com https://t.me; object-src 'none';">
+
+    <!-- Tailwind CSS ve Montserrat, Cinzel fontları -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #1a202c;
+            color: #ffffff;
+            min-height: 100vh;
+        }
+        .link-hover-effect {
+            transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+        }
+        .link-hover-effect:hover {
+            transform: scale(1.05);
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+        .font-trajan-pro {
+            font-family: 'Cinzel', serif;
+        }
+    </style>
+</head>
+<body class="flex flex-col justify-between items-center p-4">
+
+    <!-- Üst kısım: Başlık ve Anasayfa linki -->
+    <header class="w-full flex justify-between items-center p-2 px-4">
+        <div class="flex items-center">
+            <img src="logo.png" onerror="this.onerror=null;this.src='https://placehold.co/48x48/2d3748/ffffff?text=NO1';" alt="NO1-Market Logo" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full mr-2">
+            <div class="text-xl sm:text-3xl font-bold text-yellow-400 text-shadow">NO1-Market</div>
+        </div>
+        <a href="index.html" class="link-hover-effect text-yellow-200 hover:text-yellow-400 text-shadow text-sm sm:text-base">Anasayfa</a>
+    </header>
+
+    <!-- Ana içerik: İletişim bilgileri ve formu (varsayılan olarak yok) -->
+    <main class="flex-grow flex flex-col items-center p-4 w-full max-w-4xl">
+        <div class="bg-gray-800 p-8 rounded-lg shadow-xl mb-8 w-full">
+            <h1 class="font-trajan-pro text-3xl sm:text-4xl font-bold text-red-500 text-shadow mb-8 text-center">
+                İletişim
+            </h1>
+
+            <section class="text-gray-300 text-base leading-relaxed space-y-6">
+                <!-- Giriş Paragrafı -->
+                <div>
+                    <p class="text-center text-lg mb-4">
+                        Tüm sorularınız, destek talepleriniz ve siparişleriniz için bize aşağıdaki kanallar aracılığıyla kolayca ulaşabilirsiniz.
+                    </p>
+                </div>
+                
+                <!-- İletişim Kanalları -->
+                <div class="flex flex-col sm:flex-row justify-center items-center space-y-6 sm:space-y-0 sm:space-x-12 mt-8">
+                    <!-- Telegram İletişim Kanalı -->
+                    <div class="flex flex-col items-center p-4 bg-gray-700 rounded-lg shadow-md transition-transform duration-200 ease-in-out hover:scale-105 w-full sm:w-auto">
+                        <img src="2.jpg" onerror="this.onerror=null;this.src='https://placehold.co/80x80/2d3748/ffffff?text=TG';" alt="Telegram Logosu" class="h-20 w-20 rounded-full mb-4 shadow-lg border-2 border-white">
+                        <h2 class="text-xl font-bold text-yellow-400 mb-2">Telegram</h2>
+                        <a href="https://t.me/mehmetkahraman019" target="_blank" rel="noopener noreferrer" class="bg-yellow-400 text-gray-900 font-bold py-2 px-4 rounded-full hover:bg-yellow-500 transition-colors">
+                            Telegram'dan İletişime Geç
+                        </a>
+                    </div>
+                    
+                    <!-- WhatsApp İletişim Kanalı -->
+                    <div class="flex flex-col items-center p-4 bg-gray-700 rounded-lg shadow-md transition-transform duration-200 ease-in-out hover:scale-105 w-full sm:w-auto">
+                        <img src="3.jpg" onerror="this.onerror=null;this.src='https://placehold.co/80x80/2d3748/ffffff?text=WA';" alt="WhatsApp Logosu" class="h-20 w-20 rounded-full mb-4 shadow-lg border-2 border-white">
+                        <h2 class="text-xl font-bold text-yellow-400 mb-2">WhatsApp</h2>
+                        <a href="https://wa.me/5397248410" target="_blank" rel="noopener noreferrer" class="bg-green-500 text-white font-bold py-2 px-4 rounded-full hover:bg-green-600 transition-colors">
+                            WhatsApp'tan İletişime Geç
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Ek Bilgilendirme -->
+                <div class="mt-8 text-center text-sm text-gray-500">
+                    <p>
+                        Fiziksel bir mağazamız bulunmamaktadır. Tüm işlemlerimiz online platformlar üzerinden gerçekleştirilmektedir.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Alt kısım: Bilgilendirme ve Sosyal Medya logoları -->
+    <footer class="flex flex-col items-center p-4 mt-8 w-full">
+        <div class="bg-gray-800 p-8 rounded-lg shadow-xl text-center w-full max-w-4xl">
+            <h3 class="text-2xl font-bold mb-4 text-yellow-400">Yasal Bilgilendirme ve İletişim</h3>
+            <ul class="text-gray-300 text-base leading-relaxed mb-4 list-none p-0 flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-8">
+                <li><a href="mesafeli-satis-sozlesmesi.html" rel="noopener noreferrer" class="underline hover:text-yellow-400">Mesafeli Satış Sözleşmesi</a></li>
+                <li><a href="gizlilik-politikasi.html" rel="noopener noreferrer" class="underline hover:text-yellow-400">Gizlilik Politikası</a></li>
+                <li><a href="iade-ve-iptal-kosullari.html" rel="noopener noreferrer" class="underline hover:text-yellow-400">İade ve İptal Koşulları</a></li>
+                <li><a href="iletisim.html" rel="noopener noreferrer" class="underline hover:text-yellow-400">İletişim</a></li>
+            </ul>
+            <p class="text-sm text-gray-500 mt-4">
+               
+            </p>
+        </div>
+        <div class="flex justify-center space-x-6 p-4 mt-8 w-full">
+            <a href="https://t.me/mehmetkahraman019" target="_blank" rel="noopener noreferrer" class="link-hover-effect">
+                <img src="2.jpg" onerror="this.onerror=null;this.src='https://placehold.co/48x48/2d3748/ffffff?text=TG';" alt="Telegram Logosu" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full shadow-lg border-2 border-white">
+            </a>
+            <a href="https://wa.me/5397248410" target="_blank" rel="noopener noreferrer" class="link-hover-effect">
+                <img src="3.jpg" onerror="this.onerror=null;this.src='https://placehold.co/48x48/2d3748/ffffff?text=WA';" alt="WhatsApp Logosu" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full shadow-lg border-2 border-white">
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>

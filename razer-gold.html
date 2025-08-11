@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razer Gold - NO1-Market</title>
+    <!-- Favicon -->
+    <link rel="icon" href="logo.png" type="image/png">
+    <!-- Tailwind CSS ve Montserrat fontları -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #1a202c; /* Koyu gri arka plan */
+            color: #ffffff; /* Varsayılan metin rengi */
+        }
+        .container {
+            max-width: 1200px;
+        }
+        .product-card {
+            background-color: #2d3748; /* Kartlar için biraz daha açık gri */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+        }
+        .button-hover-effect {
+            transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+        }
+        .button-hover-effect:hover {
+            transform: scale(1.05);
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center min-h-screen p-4">
+
+    <!-- Üst kısım: NO1-Market başlığı, logo ve Anasayfa linki -->
+    <header class="w-full flex justify-between items-center p-2 px-4">
+        <div class="flex items-center">
+            <img src="logo.png" onerror="this.onerror=null;this.src='https://placehold.co/48x48/2d3748/ffffff?text=NO1';" alt="NO1-Market Logo" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full mr-2">
+            <div class="text-xl sm:text-3xl font-bold text-yellow-400 text-shadow">NO1-Market</div>
+        </div>
+        <!-- Geri dönmek için link anasayfa'ya yönlendirildi -->
+        <a href="index.html" class="link-hover-effect text-yellow-200 hover:text-yellow-400 text-shadow text-sm sm:text-base">Anasayfa</a>
+    </header>
+
+    <main class="w-full container grid grid-cols-1 md:grid-cols-2 gap-8 my-8">
+        
+        <!-- Razer Gold Bozum Kartı -->
+        <div class="product-card rounded-lg shadow-xl p-6 flex flex-col items-center text-center">
+            <img src="RazerGold.jpg" onerror="this.onerror=null;this.src='https://placehold.co/400x200/2d3748/ffffff?text=Razer+Gold';" alt="Razer Gold Görseli" class="w-full max-w-sm rounded-lg shadow-lg mb-4">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-2 text-green-400">Razer Gold Bozum</h2>
+            <p class="text-sm mb-4 text-gray-300">
+                Razer Gold bakiyelerinizi anında nakite çevirin. Güvenli ve hızlı bozum işlemleri için iletişime geçin.
+            </p>
+            <!-- Eklenen Hukuki Uyarı -->
+            <div class="bg-yellow-900 text-yellow-200 text-xs p-2 rounded-md mb-4 w-full">
+                <p>
+                    Dijital ürünlerde kod teslimatından sonra iade hakkı bulunmamaktadır.
+                </p>
+            </div>
+            <div class="flex flex-col items-center mb-6 text-xl sm:text-2xl font-extrabold text-orange-400">
+                <span>1000 TL altı %70</span>
+                <span>1000 TL üstü %75</span>
+                <span>10.000 TL üstü %80</span>
+            </div>
+            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 w-full">
+                <!-- WhatsApp Butonu -->
+                <a href="https://wa.me/5397248410" target="_blank" class="w-full sm:w-1/2 bg-green-500 text-white font-bold py-3 px-6 rounded-full button-hover-effect hover:bg-green-600">
+                    WhatsApp ile İletişim
+                </a>
+                <!-- Telegram Butonu -->
+                <a href="https://t.me/mehmetkahraman019" target="_blank" class="w-full sm:w-1/2 bg-blue-500 text-white font-bold py-3 px-6 rounded-full button-hover-effect hover:bg-blue-600">
+                    Telegram ile İletişim
+                </a>
+            </div>
+        </div>
+
+        <!-- Razer Gold Satın Alma Kartı -->
+        <div class="product-card rounded-lg shadow-xl p-6 flex flex-col items-center text-center">
+            <img src="RazerGold.jpg" onerror="this.onerror=null;this.src='https://placehold.co/400x200/2d3748/ffffff?text=Razer+Gold';" alt="Razer Gold Görseli" class="w-full max-w-sm rounded-lg shadow-lg mb-4">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-2 text-green-400">Razer Gold Satın Al</h2>
+            <p class="text-sm mb-4 text-gray-300">
+                Oyun içi harcamalarınız ve dijital içerikleriniz için ihtiyacınız olan Razer Gold'u güvenle satın alın.
+            </p>
+            <!-- Eklenen Hukuki Uyarı -->
+            <div class="bg-yellow-900 text-yellow-200 text-xs p-2 rounded-md mb-4 w-full">
+                <p>
+                    Dijital ürünlerde kod teslimatından sonra iade hakkı bulunmamaktadır.
+                </p>
+            </div>
+            <div class="flex items-center mb-6">
+                <span class="text-xl sm:text-2xl font-extrabold text-orange-400">Fiyat: Tüm Tutarlar için:%95</span>
+            </div>
+            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 w-full">
+                <!-- WhatsApp Butonu -->
+                <a href="https://wa.me/5397248410" target="_blank" class="w-full sm:w-1/2 bg-green-500 text-white font-bold py-3 px-6 rounded-full button-hover-effect hover:bg-green-600">
+                    WhatsApp ile Satın Al
+                </a>
+                <!-- Telegram Butonu -->
+                <a href="https://t.me/mehmetkahraman019" target="_blank" class="w-full sm:w-1/2 bg-blue-500 text-white font-bold py-3 px-6 rounded-full button-hover-effect hover:bg-blue-600">
+                    Telegram ile Satın Al
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Sayfanın altındaki ek bilgilendirme alanı -->
+    <section class="bg-gray-800 p-8 rounded-lg shadow-xl text-center mt-8 mb-8 w-full max-w-4xl">
+        <h3 class="text-2xl font-bold mb-4 text-yellow-400">Güvenli Ticaret ve Destek</h3>
+        <p class="text-gray-300 text-base leading-relaxed mb-4">
+            NO1-Market olarak, Razer Gold işlemlerinizde %100 güvenli bir deneyim sunuyoruz. Tüm alım-satım ve bozum işlemlerinizi Telegram ve WhatsApp üzerinden şeffaf bir şekilde yönetiyoruz. Aklınıza takılan her türlü soru için 7/24 destek hattımız üzerinden bize ulaşabilirsiniz. Güvenilir ve hızlı hizmetin keyfini çıkarın.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-8 mt-6">
+            <a href="https://t.me/razergoldalsat" target="_blank" class="w-full sm:w-auto bg-blue-600 text-white font-bold py-3 px-6 rounded-full button-hover-effect hover:bg-blue-700">
+                İlan Kanalı
+            </a>
+            <a href="https://t.me/mehmetkahraman019" target="_blank" class="w-full sm:w-auto bg-blue-600 text-white font-bold py-3 px-6 rounded-full button-hover-effect hover:bg-blue-700">
+                Market Kanalı
+            </a>
+        </div>
+    </section>
+
+    <!-- Alt kısım: Telegram ve WhatsApp logoları, yanına eklenen yasal linkler -->
+    <footer class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-x-6 p-4 mt-8 w-full text-center sm:text-left">
+        <!-- Mevcut logolarınızın olduğu bölüm -->
+        <div class="flex justify-center space-x-6">
+            <a href="https://t.me/mehmetkahraman019" target="_blank" rel="noopener noreferrer" class="link-hover-effect">
+                <img src="2.jpg" onerror="this.onerror=null;this.src='https://placehold.co/48x48/2d3748/ffffff?text=TG';" alt="Telegram Logosu" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full shadow-lg border-2 border-white">
+            </a>
+            <a href="https://wa.me/5397248410" target="_blank" rel="noopener noreferrer" class="link-hover-effect">
+                <img src="3.jpg" onerror="this.onerror=null;this.src='https://placehold.co/48x48/2d3748/ffffff?text=WA';" alt="WhatsApp Logosu" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full shadow-lg border-2 border-white">
+            </a>
+        </div>
+    
+        <!-- Yeni Hukuki Belgeler bölümü -->
+        <div class="flex flex-col space-y-2 mt-4 sm:mt-0 sm:ml-8">
+            <a href="#" class="text-sm hover:text-yellow-400">Mesafeli Satış Sözleşmesi</a>
+            <a href="#" class="text-sm hover:text-yellow-400">Kullanım Koşulları</a>
+            <a href="#" class="text-sm hover:text-yellow-400">Gizlilik Politikası & KVKK</a>
+            <a href="#" class="text-sm hover:text-yellow-400">Çerez Politikası</a>
+            <a href="#" class="text-sm hover:text-yellow-400">İade ve İptal Politikası</a>
+            <a href="#" class="text-sm hover:text-yellow-400">Yasal Uyarılar</a>
+        </div>
+    </footer>
+
+    <!-- Çerez Onay Banner -->
+    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-gray-800 text-white p-4 flex flex-col sm:flex-row items-center justify-between z-50">
+        <div class="flex items-center">
+            <span class="mr-4 text-2xl">🍪</span>
+            <p class="text-sm text-gray-300 mb-2 sm:mb-0">
+                Sitemizdeki deneyiminizi geliştirmek için çerezler kullanmaktayız. Gizlilik Politikası için <a href="#" class="text-blue-400 underline">tıklayınız</a>.
+            </p>
+        </div>
+        <button id="accept-cookies" class="bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded-md mt-2 sm:mt-0">
+            Kabul Et
+        </button>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const cookieBanner = document.getElementById('cookie-banner');
+            const acceptButton = document.getElementById('accept-cookies');
+
+            // Kullanıcı daha önce kabul ettiyse banner'ı gösterme
+            if (localStorage.getItem('cookies-accepted') === 'true') {
+                cookieBanner.style.display = 'none';
+            }
+
+            acceptButton.addEventListener('click', function() {
+                localStorage.setItem('cookies-accepted', 'true');
+                cookieBanner.style.display = 'none';
+            });
+        });
+    </script>
+</body>
+</html>
